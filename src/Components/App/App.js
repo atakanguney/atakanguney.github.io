@@ -1,9 +1,11 @@
-function App() {
+import { Header } from "semantic-ui-react";
+
+const App = () => {
   return (
     <div>
-      <header>
+      <Header as="h1">
           Atakan Guney
-      </header>
+      </Header>
     </div>
   );
 }
