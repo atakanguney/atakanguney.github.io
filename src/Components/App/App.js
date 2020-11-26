@@ -1,13 +1,16 @@
-import { Header } from "semantic-ui-react";
+
+import "./app.scss";
+import "./uikit-custom.scss";
+
+import PageLoader from "../PageLoader";
 
 const App = () => {
   return (
     <div>
-      <Header as="h1">
-          Atakan Guney
-      </Header>
+      <PageLoader />
+      <h1>Atakan Guney</h1>
     </div>
   );
-}
+};
 
 export default App;
