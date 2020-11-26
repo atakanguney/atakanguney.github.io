@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./page-loader.scss";
 import $ from "jquery";
-const UIKit = require("uikit");
 
 
 function init_pageloader() {
@@ -18,10 +17,10 @@ function init_pageloader() {
 function init_check_hash_url() {
   if (
     window.location.hash &&
-    window.location.hash != "" &&
+    window.location.hash !== "" &&
     $(window.location.hash).length
   ) {
-    var speed = window.location.hash == "#home" ? 0 : 700;
+    var speed = window.location.hash === "#home" ? 0 : 700;
     console.log(window.location.hash);
     init_scroll_to($(window.location.hash), speed, 79);
   }
