@@ -1,18 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./page-loader.scss";
 import $ from "jquery";
 
-
-function init_pageloader() {
-  var $pageloader = $("#pageloader");
-  setTimeout(function () {
-    $pageloader.addClass("uk-transition-fade");
-    setTimeout(function () {
-      $pageloader.addClass("page-is-loaded");
-      init_check_hash_url();
-    }, 400);
-  }, 300);
-}
 
 function init_check_hash_url() {
   if (
@@ -39,12 +28,29 @@ function init_scroll_to($el, speed, offset) {
 }
 
 const PageLoader = () => {
+
+  const [pageLoaderClass, setPageLoaderClass] = useState(["yb-pageloader-wrapper"]);
+
   useEffect(() => {
-    init_pageloader()
-  }, [])
+    let timer2 = "";
+    const timer1 = setTimeout(function () {
+      setPageLoaderClass([...pageLoaderClass, "uk-transition-fade"])
+      timer2 = setTimeout(function () {
+        setPageLoaderClass([...pageLoaderClass, "page-is-loader"])
+        init_check_hash_url();
+      }, 400);
+    }, 300);
+
+    return () => {
+      clearTimeout(timer1);
+      if (timer2 !== "") {
+        clearTimeout(timer2);
+      }
+    };
+  }, [pageLoaderClass]);
 
   return (
-    <div id="pageloader" className="yb-pageloader-wrapper">
+    <div id="pageloader" className={pageLoaderClass.join(" ")}>
       <div className="uk-position-center  uk-text-center">
         <div data-uk-spinner></div>
       </div>
