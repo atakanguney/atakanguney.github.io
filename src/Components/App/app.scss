@@ -1,7 +1,5 @@
-html, body { 
-    overflow-x: hidden;   
-  }
-  
-  *, ::after, ::before {
-    box-sizing: border-box;
-  } 
+@import "./uikit-custom.scss";
+
+@import "./body.scss";
+
+@import "./component.scss";
