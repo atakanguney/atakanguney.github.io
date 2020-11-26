@@ -34,9 +34,9 @@ const PageLoader = () => {
   useEffect(() => {
     let timer2 = "";
     const timer1 = setTimeout(function () {
-      setPageLoaderClass([...pageLoaderClass, "uk-transition-fade"])
+      setPageLoaderClass(p => [...p, "uk-transition-fade"])
       timer2 = setTimeout(function () {
-        setPageLoaderClass([...pageLoaderClass, "page-is-loader"])
+        setPageLoaderClass(p => [...p, "page-is-loader"])
         init_check_hash_url();
       }, 400);
     }, 300);
@@ -47,7 +47,7 @@ const PageLoader = () => {
         clearTimeout(timer2);
       }
     };
-  }, [pageLoaderClass]);
+  }, []);
 
   return (
     <div id="pageloader" className={pageLoaderClass.join(" ")}>

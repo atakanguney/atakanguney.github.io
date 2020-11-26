@@ -1,14 +1,14 @@
 
 import "./app.scss";
-import "./uikit-custom.scss";
 
 import PageLoader from "../PageLoader";
+import MainMenu from "../MainMenu";
 
 const App = () => {
   return (
     <div>
       <PageLoader />
-      <h1>Atakan Guney</h1>
+      <MainMenu />
     </div>
   );
 };
