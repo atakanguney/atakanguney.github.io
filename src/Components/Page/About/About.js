@@ -2,7 +2,7 @@ import React from "react";
 
 import "./about.scss";
 
-import profile from "../../../Assets/img/profile.jpg";
+import profile from "../../../Assets/img/profile.jpeg";
 
 const About = () => {
   return (
@@ -20,13 +20,13 @@ const About = () => {
                 data-uk-img=""
                 data-uk-lightbox=""
               >
-                <a
+                {/* <a
                   href="https://www.youtube.com/watch?v=uQBL7pSAXR8"
                   className="yb-my-intro"
                 >
                   <span data-uk-icon="icon: play; ratio: 2"></span>
                   <span className="yb-my-intro-text">Introduction</span>
-                </a>
+                </a> */}
               </div>
             </div>
             <div>
@@ -40,37 +40,36 @@ const About = () => {
                 <div className="yb-my-profile-desc-top">
                   <h2 className="yb-section-title">Hello There!</h2>
                   <p>
-                    I discovered my passion for design when I was a sophomore in
-                    High School; It was then when it became clear what I wanted
-                    to do for a living. I pursued my career at the amazing
-                    Valencia College where I started my major in Print Design. A
-                    year later I took a begginer’s Web className, where I
-                    discovered the love for code. After that, I switched my
-                    major to Interactive Design and started the never-ending
-                    journey of becoming a web developer along with sharpening my
-                    eye for design.
+                    I discovered my passion to machine learning in my sophomore year at collage.
+                    Since then, I have worked on plenty of projects to advance my skills. Currently,
+                     I am pursuing a Ms degree in computer engineering, especially in the field of natural language processing.
+                     My research interests consist of NLP, Deep Reinforcement Learning, Bayesian Deep Learning, Computer Vision with Deep Learning,
+                     basically I am interested in any fields of deep learning.
+                  </p>
+                  <p>
+                    My interest in the field is twofold, both theory and practive. Thus, I improved myself with the best practice technologies for developing and serving models.
+                    I am mostly comfortable with TensorFlow for developing models and for serving my models I prefer Amazon SageMaker.
+                  </p>
+                  <p>
+                    Besides my research and work in Machine Learning and AI, I also enjoy to develop web and mobile applications.
+                    To improve my application development skills, I follow up-to-date technologies for different platforms. For single page applications,
+                    I have been learning React, React-Native, Vue, and for the backend and full-stack development I am constantly learning django(python) and laravel(php) frameworks.
+                    As technologies improve, I also adapt my applications via serverless frameworks. I develop projects with Firebase, and AWS Lambda and Amplify, too.
                   </p>
                 </div>
                 <div className="yb-my-profile-desc-bottom yb-bg-soft">
                   <ul className="yb-my-profile-desc-info uk-list">
                     <li>
-                      <span>Birthdate</span> : 09/11/1990
+                      <span>Birthdate</span> : 04/05/1194
                     </li>
                     <li>
-                      <span>Skype</span> : my.username
+                      <span>Phone</span> : + 90-539-325-7485
                     </li>
                     <li>
-                      <span>Phone</span> : + 123-456-789-426
+                      <span>Email</span> : aatakanguney@gmail.com
                     </li>
                     <li>
-                      <span>Email</span> : get.someone@gmail.com
-                    </li>
-                    <li>
-                      <span>Website</span> : www.creativedomain.com
-                    </li>
-                    <li>
-                      <span>Addresses</span> : Collins Street West Victoria 8007
-                      Australia
+                      <span>Website</span> : atakanguney.github.io
                     </li>
                   </ul>
                 </div>
@@ -89,18 +88,18 @@ const About = () => {
               <div className="yb-box-service">
                 <span
                   className="uk-icon"
-                  data-uk-icon="icon: laptop; ratio: 1.5"
+                  data-uk-icon="icon: search; ratio: 1.5"
                 ></span>
-                <h5>Web Developer</h5>
+                <h5>Machine Learning Researcher</h5>
               </div>
             </div>
             <div>
               <div className="yb-box-service">
                 <span
                   className="uk-icon"
-                  data-uk-icon="icon: paint-bucket; ratio: 1.5"
+                  data-uk-icon="icon: laptop; ratio: 1.5"
                 ></span>
-                <h5>Web Designer</h5>
+                <h5>Deep Learning Engineer</h5>
               </div>
             </div>
             <div>
@@ -109,16 +108,16 @@ const About = () => {
                   className="uk-icon"
                   data-uk-icon="icon: world; ratio: 1.5"
                 ></span>
-                <h5>Web Marketer</h5>
+                <h5>Web Developer</h5>
               </div>
             </div>
             <div>
               <div className="yb-box-service">
                 <span
                   className="uk-icon"
-                  data-uk-icon="icon: settings; ratio: 1.5"
+                  data-uk-icon="icon: database; ratio: 1.5"
                 ></span>
-                <h5>Web Tester</h5>
+                <h5>Data Engineer</h5>
               </div>
             </div>
           </div>

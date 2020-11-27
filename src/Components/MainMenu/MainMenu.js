@@ -33,12 +33,12 @@ const MainMenu = () => {
         <div className="uk-container" data-uk-navbar>
           <div className="uk-navbar-left">
             <a className="yb-logo uk-navbar-item uk-logo" href="/">
-              <span>Freda</span>
+              <span>Atakan</span>
             </a>
           </div>
           <div className="uk-navbar-right uk-hidden@m">
             <a className="uk-navbar-toggle" href="#" id="btn-menu-toggle">
-              <span data-uk-navbar-toggle-icon className="yb-icon-menu"></span>
+              <span data-uk-navbar-toggle-icon="" className="yb-icon-menu"></span>
               <span data-uk-icon="close" className="yb-icon-close"></span>
             </a>
           </div>
@@ -67,12 +67,6 @@ const MainMenu = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="yb-inner-link" href="#portfolio">
-                    {" "}
-                    Portfolio{" "}
-                  </a>
-                </li>
-                <li>
                   <a className="yb-inner-link" href="#blog">
                     {" "}
                     Blog{" "}
@@ -89,7 +83,7 @@ const MainMenu = () => {
             <div className="uk-navbar-right">
               <ul className="uk-navbar-nav yb-social-icons">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/atkn1907">
                     <span
                       className="uk-icon "
                       data-uk-icon="icon: facebook"
@@ -97,7 +91,7 @@ const MainMenu = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/aatakang/">
                     <span
                       className="uk-icon"
                       data-uk-icon="icon: instagram"
@@ -105,7 +99,7 @@ const MainMenu = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/atakanguney2">
                     <span
                       className="uk-icon"
                       data-uk-icon="icon: twitter"
