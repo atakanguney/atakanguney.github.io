@@ -6,6 +6,7 @@ import "./app.scss";
 
 import PageLoader from "../PageLoader";
 import MainMenu from "../MainMenu";
+import Page from "../Page";
 
 var is_scroll = false;
 var is_resize = false;
@@ -73,6 +74,9 @@ const App = () => {
     <div>
       <PageLoader />
       <MainMenu />
+      <main>
+        <Page />
+      </main>
     </div>
   );
 };

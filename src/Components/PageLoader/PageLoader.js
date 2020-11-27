@@ -36,7 +36,7 @@ const PageLoader = () => {
     const timer1 = setTimeout(function () {
       setPageLoaderClass(p => [...p, "uk-transition-fade"])
       timer2 = setTimeout(function () {
-        setPageLoaderClass(p => [...p, "page-is-loader"])
+        setPageLoaderClass(p => [...p, "page-is-loaded"])
         init_check_hash_url();
       }, 400);
     }, 300);
@@ -52,7 +52,7 @@ const PageLoader = () => {
   return (
     <div id="pageloader" className={pageLoaderClass.join(" ")}>
       <div className="uk-position-center  uk-text-center">
-        <div data-uk-spinner></div>
+        <div data-uk-spinner=""></div>
       </div>
     </div>
   );
