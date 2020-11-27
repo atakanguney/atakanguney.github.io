@@ -7,6 +7,7 @@ import "./app.scss";
 import PageLoader from "../PageLoader";
 import MainMenu from "../MainMenu";
 import Page from "../Page";
+import "jquery.easing";
 
 var is_scroll = false;
 var is_resize = false;
