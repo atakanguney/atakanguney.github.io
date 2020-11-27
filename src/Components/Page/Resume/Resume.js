@@ -2,6 +2,10 @@ import ResumeItem from "./ResumeItem";
 import ResumeCircleItem from "./ResumeCircleItem";
 import ResumeLineItem from "./ResumeLineItem";
 
+import bg2 from "../../../Assets/img/bg/bg2.jpg";
+
+import "./resume.scss";
+
 const Resume = () => {
   return (
     <section className="yb-section " id="resume">
@@ -51,7 +55,11 @@ const Resume = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#awwwards" className="yb-inner-link" data-offset="120">
+                  <a
+                    href="#awwwards"
+                    className="yb-inner-link"
+                    data-offset="120"
+                  >
                     <span data-uk-icon="minus"></span>
                     Awards
                   </a>
@@ -84,7 +92,10 @@ const Resume = () => {
               </div>
             </div>
             <div>
-              <h2 className="yb-section-title  uk-heading-line " id="experience">
+              <h2
+                className="yb-section-title  uk-heading-line "
+                id="experience"
+              >
                 <span>Experience</span>
               </h2>
               <div className="yb-resume-list">
@@ -225,7 +236,7 @@ const Resume = () => {
       <div
         className="yb-section yb-section-padding uk-background-cover uk-background-fixed "
         data-uk-parallax="bgy: -200"
-        data-src="src/img/bg/bg2.jpg"
+        data-src={bg2}
         data-uk-img=""
       >
         <div className="yb-overlay-primary uk-position-cover"></div>
