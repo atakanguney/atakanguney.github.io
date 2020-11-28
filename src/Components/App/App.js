@@ -20,6 +20,30 @@ function init_full_height() {
   }
 }
 
+function init_inner_link() {
+  $(".yb-inner-link").on("click", function() {
+    var $el = $(this).attr("href");
+    var ofsset = parseInt($(this).attr("data-offset"));
+    if ($($el).length) {
+      ofsset = ofsset > 0 ? ofsset : 79;
+      init_scroll_to($($el), 1500, ofsset);
+      return false;
+    }
+  });
+}
+
+function init_scroll_to($el, speed, offset) {
+  $("html, body").animate(
+    {
+      scrollTop: $el.offset().top - offset
+    },
+    {
+      duration: speed,
+      easing: "easeInOutExpo"
+    }
+  );
+}
+
 function init_scroll() {
   if (!is_resize) {
     var window_height =
@@ -49,7 +73,8 @@ function init_update_uikit() {
 const App = () => {
   useEffect(() => {
     //Run function when window on scroll
-    $(window).on("scroll", function () {
+
+    const handleScroll = () => {
       init_scroll();
       is_scroll = true;
       clearTimeout(myscroll);
@@ -57,7 +82,9 @@ const App = () => {
         is_scroll = false;
         init_update_uikit();
       }, 300);
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     //Run function when window on resize
     $(window).on("resize", function () {
@@ -69,7 +96,13 @@ const App = () => {
         init_scroll();
       }, 300);
     });
+
     init_full_height();
+    init_inner_link();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
   return (
     <div>
