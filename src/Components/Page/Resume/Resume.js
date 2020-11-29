@@ -80,6 +80,7 @@ const Resume = () => {
                       t1="Master of Science in Computer Enginnering"
                       t2="Boğaziçi University"
                       d="2018 - present"
+                      description=""
                     />
                   </li>
                   <li>
@@ -87,6 +88,7 @@ const Resume = () => {
                       t1="Bachelor of Science in Computer Engineering"
                       t2="Boğaziçi University"
                       d="2013 - 2018"
+                      description=""
                     />
                   </li>
                   <li>
@@ -94,6 +96,7 @@ const Resume = () => {
                       t1="Bachelor of Science in Mathematics"
                       t2="Boğaziçi University"
                       d="2015 - 2018"
+                      description=""
                     />
                   </li>
                   <li>
@@ -101,6 +104,7 @@ const Resume = () => {
                       t1="Exchange Student in ECE"
                       t2="University of Texas at Austin"
                       d="2017 Spring"
+                      description=""
                     />
                   </li>
                 </ul>
@@ -120,6 +124,7 @@ const Resume = () => {
                       t1="Software Engineer"
                       t2="Upwork"
                       d="October 2020 - Present"
+                      description="Working in Data Science team"
                     />
                   </li>
                   <li>
@@ -127,6 +132,7 @@ const Resume = () => {
                       t1="Machine Learning Engineer(Freelancer)"
                       t2="CustomerFirst AI"
                       d="March 2020 - July 2020"
+                      description="Developed Bayesian Network model within a decision making system"
                     />
                   </li>
                   <li>
@@ -134,6 +140,7 @@ const Resume = () => {
                       t1="Machine Learning Engineer(Freelancer)"
                       t2="Tria AI"
                       d="January 2020 - March 2020"
+                      description="Adapted existing machine learning models in Apache Spark"
                     />
                   </li>
                   <li>
@@ -141,6 +148,7 @@ const Resume = () => {
                       t1="Machine Learning Engineer"
                       t2="Dcipher Analytics"
                       d="July 2018 - May 2019"
+                      description="Worked in backend team for a data science platform"
                     />
                   </li>
                   <li>
@@ -148,6 +156,7 @@ const Resume = () => {
                       t1="Software Engineer"
                       t2="Matriks Bilgi Dağıtım Hiz."
                       d="July 2017 - June 2017"
+                      description="Developed a deep learning model for time-series prediction"
                     />
                   </li>
                 </ul>
@@ -162,7 +171,7 @@ const Resume = () => {
                   className="uk-grid-collapse  uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center"
                   data-uk-grid=""
                 >
-                <div className="yb-bg-soft">
+                  <div className="yb-bg-soft">
                     <ResumeCircleItem title="Python" v="1" r="100" />
                   </div>
                   <div className="yb-bg-soft">
@@ -242,9 +251,10 @@ const Resume = () => {
                 <ul className="uk-list uk-list-large uk-list-divider">
                   <li>
                     <ResumeItem
-                      t1="3rd Place"
-                      t2="Bogazici University, CMPE Department"
+                      t1="High Honor"
+                      t2="Bogazici University, Computer Enginnering"
                       d="2018 - 2019"
+                      description="Had 3rd place out of 80"
                     />
                   </li>
                 </ul>
@@ -275,7 +285,7 @@ const Resume = () => {
                 href="#contact"
                 className="yb-inner-link yb-btn uk-button uk-button-danger  uk-button-large"
               >
-                Hire Me
+                Contact Me
               </a>
             </div>
           </div>

@@ -58,7 +58,7 @@ const Blog = () => {
         </div>
 
         <h5 className="uk-heading-line uk-text-right uk-text-bold">
-          <a href="https://medium.com/@atakanguney94" target="_blank" className="uk-link-heading">
+          <a href="https://medium.com/@atakanguney94" target="_blank" className="uk-link-heading" rel="noreferrer">
             See More
             <span data-uk-icon="icon:arrow-right; ratio: 2"></span>
           </a>
