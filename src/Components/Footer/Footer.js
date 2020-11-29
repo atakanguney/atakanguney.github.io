@@ -41,6 +41,7 @@ const Footer = () => {
             </div>
             <div className="uk-margin-remove uk-text-right@s">
               <div className="yb-footer-social">
+                <a href="https://github.com/atakanguney">GitHub</a>
                 <a href="https://www.facebook.com/atkn1907">Facebook</a>
                 <a href="https://www.instagram.com/aatakang/">Instagram</a>
                 <a href="https://twitter.com/atakanguney2">Twitter</a>

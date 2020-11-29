@@ -38,7 +38,10 @@ const MainMenu = () => {
           </div>
           <div className="uk-navbar-right uk-hidden@m">
             <button className="uk-navbar-toggle" id="btn-menu-toggle">
-              <span data-uk-navbar-toggle-icon="" className="yb-icon-menu"></span>
+              <span
+                data-uk-navbar-toggle-icon=""
+                className="yb-icon-menu"
+              ></span>
               <span data-uk-icon="close" className="yb-icon-close"></span>
             </button>
           </div>
@@ -82,6 +85,14 @@ const MainMenu = () => {
             </div>
             <div className="uk-navbar-right">
               <ul className="uk-navbar-nav yb-social-icons">
+                <li>
+                  <a href="https://github.com/atakanguney">
+                    <span
+                      className="uk-icon "
+                      data-uk-icon="icon: github"
+                    ></span>
+                  </a>
+                </li>
                 <li>
                   <a href="https://www.facebook.com/atkn1907">
                     <span

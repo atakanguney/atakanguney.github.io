@@ -10,6 +10,7 @@ import MainMenu from "../MainMenu";
 import Page from "../Page";
 import Footer from "../Footer";
 import Blog from "../Blog";
+import Contact from "../Contact";
 
 var is_scroll = false;
 var is_resize = false;
@@ -112,6 +113,7 @@ const App = () => {
       <MainMenu />
       <Page />
       <Blog />
+      <Contact />
       <Footer />
     </Fragment>
   );

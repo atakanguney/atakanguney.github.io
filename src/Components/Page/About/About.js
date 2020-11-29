@@ -20,13 +20,6 @@ const About = () => {
                 data-uk-img=""
                 data-uk-lightbox=""
               >
-                {/* <a
-                  href="https://www.youtube.com/watch?v=uQBL7pSAXR8"
-                  className="yb-my-intro"
-                >
-                  <span data-uk-icon="icon: play; ratio: 2"></span>
-                  <span className="yb-my-intro-text">Introduction</span>
-                </a> */}
               </div>
             </div>
             <div>
@@ -61,9 +54,6 @@ const About = () => {
                   <ul className="yb-my-profile-desc-info uk-list">
                     <li>
                       <span>Birthdate</span> : 04/05/1994
-                    </li>
-                    <li>
-                      <span>Phone</span> : + 90-539-325-7485
                     </li>
                     <li>
                       <span>Email</span> : aatakanguney@gmail.com

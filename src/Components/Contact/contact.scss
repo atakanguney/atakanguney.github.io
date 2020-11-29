@@ -1,0 +1,25 @@
+@import "~uikit/src/scss/variables-theme.scss";
+@import "../App/vars.scss";
+
+.#{$px} {
+  &-contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $breakpoint-small-max) {
+      padding-bottom: 0;
+    }
+  }
+
+  &-contact-right {
+    @media (max-width: $breakpoint-small-max) {
+      padding-top: 0;
+    }
+  }
+
+  &-contact-mini {
+    .uk-icon {
+      width: 40px;
+    }
+  }
+}
