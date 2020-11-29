@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, Fragment } from "react";
 import $ from "jquery";
 import UIkit from "uikit";
 
@@ -21,7 +21,7 @@ function init_full_height() {
 }
 
 function init_inner_link() {
-  $(".yb-inner-link").on("click", function() {
+  $(".yb-inner-link").on("click", function () {
     var $el = $(this).attr("href");
     var ofsset = parseInt($(this).attr("data-offset"));
     if ($($el).length) {
@@ -35,11 +35,11 @@ function init_inner_link() {
 function init_scroll_to($el, speed, offset) {
   $("html, body").animate(
     {
-      scrollTop: $el.offset().top - offset
+      scrollTop: $el.offset().top - offset,
     },
     {
       duration: speed,
-      easing: "easeInOutExpo"
+      easing: "easeInOutExpo",
     }
   );
 }
@@ -105,13 +105,11 @@ const App = () => {
     };
   }, []);
   return (
-    <div>
+    <Fragment>
       <PageLoader />
       <MainMenu />
-      <main>
-        <Page />
-      </main>
-    </div>
+      <Page />
+    </Fragment>
   );
 };
 

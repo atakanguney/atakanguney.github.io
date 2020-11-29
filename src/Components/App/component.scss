@@ -1,3 +1,6 @@
+@import "./vars.scss";
+@import "~uikit/src/scss/variables-theme.scss";
+
 .#{$px} {
     &-text-small {
       font-size: 13px;
