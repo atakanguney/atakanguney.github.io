@@ -3,6 +3,8 @@ import $ from "jquery";
 import { useEffect } from "react";
 import Typed from "typed.js";
 
+import x1 from "../../../Assets/img/x1.png";
+
 function init_typed() {
   var $typed = $("#typed");
   if ($typed.length) {
@@ -36,7 +38,7 @@ const MainHome = () => {
         <div className="yb-graphic-2" data-uk-parallax="blur: 0,30;"></div>
       </div>
       <div className="uk-container uk-text-center yb-profile-desc-wrap uk-position-relative">
-        <img src="src/img/x1.png" alt="" width="60" />
+        <img src={x1} alt="" width="60" />
         <h1 className="uk-text-bold yb-gradient-text">
           <span>Atakan</span> <span>Güney</span>
         </h1>

@@ -37,10 +37,10 @@ const MainMenu = () => {
             </a>
           </div>
           <div className="uk-navbar-right uk-hidden@m">
-            <a className="uk-navbar-toggle" href="#" id="btn-menu-toggle">
+            <button className="uk-navbar-toggle" id="btn-menu-toggle">
               <span data-uk-navbar-toggle-icon="" className="yb-icon-menu"></span>
               <span data-uk-icon="close" className="yb-icon-close"></span>
-            </a>
+            </button>
           </div>
           <div className="yb-menu-toggle-wrapper" id="menucollapse">
             <div className="uk-navbar-center">
