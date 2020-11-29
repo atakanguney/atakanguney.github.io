@@ -9,6 +9,7 @@ import PageLoader from "../PageLoader";
 import MainMenu from "../MainMenu";
 import Page from "../Page";
 import Footer from "../Footer";
+import Blog from "../Blog";
 
 var is_scroll = false;
 var is_resize = false;
@@ -110,6 +111,7 @@ const App = () => {
       <PageLoader />
       <MainMenu />
       <Page />
+      <Blog />
       <Footer />
     </Fragment>
   );
