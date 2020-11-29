@@ -94,6 +94,14 @@ const MainMenu = () => {
                   </a>
                 </li>
                 <li>
+                  <a href="https://medium.com/@atakanguney94">
+                    <span
+                      className="uk-icon "
+                      data-uk-icon="icon: pencil"
+                    ></span>
+                  </a>
+                </li>
+                <li>
                   <a href="https://www.facebook.com/atkn1907">
                     <span
                       className="uk-icon "
