@@ -3,11 +3,12 @@ import $ from "jquery";
 import UIkit from "uikit";
 
 import "./app.scss";
+import "jquery.easing";
 
 import PageLoader from "../PageLoader";
 import MainMenu from "../MainMenu";
 import Page from "../Page";
-import "jquery.easing";
+import Footer from "../Footer";
 
 var is_scroll = false;
 var is_resize = false;
@@ -109,6 +110,7 @@ const App = () => {
       <PageLoader />
       <MainMenu />
       <Page />
+      <Footer />
     </Fragment>
   );
 };
